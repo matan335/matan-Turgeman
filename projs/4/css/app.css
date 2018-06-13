@@ -1,0 +1,119 @@
+body {
+  background-color: black;
+  color:white;
+  padding:0px;
+  
+}
+.game-box{
+  display: flex;
+  flex-flow: column wrap;
+  align-items:center;
+  justify-content: space-around;
+  width:100%;
+  height:100%;
+
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color:black
+}
+.wall{
+  background-color: blueviolet
+}
+
+h3{
+ width: auto;
+ height: 35px;
+ text-align: center;
+ background-color: blue;
+ padding:25px;
+ border-radius: 10px;
+ font-size: 20px;
+}
+.btn{
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  color:white;
+  background-color: blue;
+  border-radius: 10px;
+  border:none;
+  order: 1;
+  font-size: 15px;
+  cursor:pointer;
+  transition: 2s;
+}
+.btn:hover {
+  width: 150px;
+  background-color: royalblue;
+}
+.reset-game-btn{
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  color:white;
+  background-color: blue;
+  border-radius: 10px;
+  border:none;
+  order: 1;
+  font-size: 15px;
+  cursor:pointer;
+  transition: 3s;
+}
+
+.reset-game-btn{
+  width: 150px;
+  background-color: royalblue;
+}
+
+
+.boardContainer{
+  margin:20px;
+}
+.hide{
+  display: none;
+}
+
+.btn-close {
+  position: relative;
+  left: 216px;
+  bottom: 27px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  font-size: 27px;
+  color: white;
+}
+
+
+.modal{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 252px;
+  height: 36%;
+  width: 40%;
+  margin: 0 auto;
+  background-color: #d0bacec9;
+  color: white;
+  box-sizing: border-box;
+  transition: opacity 1.5s;
+  padding: 2em;
+}
+
+.modal-open{    
+  visibility: visible;
+  opacity: 1;
+}
+h1{
+  position: relative;
+  left: 66px;
+  padding: 17px;
+  width: 240px;
+  border-radius: 10px;
+  background-color: blue;
+
+}

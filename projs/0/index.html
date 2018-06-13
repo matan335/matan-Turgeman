@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book shop</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body onload="initBookShop()">
+    <button class="btn-add" type="submit" onclick="readAndAddNewBook()">+</button>
+    <table class="table table-striped  books-table">
+
+    </table>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="selector-for-rate">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Rate the book!</label>
+                            </div>
+                        </div>
+                    <h5 class="modal-title">Book Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span onclick="closeModal()" aria-hidden="true">&times;</span>
+                    </button>
+                    <button onclick=" changeRate('+')">thumbs up</button>
+                    <button onclick=" changeRate('-')">thumbs down</button>
+                   
+                </div>
+                <div class="modal-body">
+                    <p class="book-details">Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="closeModal()">Save changes</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    </table>
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/controler.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
